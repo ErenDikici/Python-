@@ -1,0 +1,228 @@
+# kombinasyon --> n! / r!*(n-r)! idi 
+# disardan alinan n ve r sayisinin K(n,r) cevabını bulunuz
+# n=int(input("Lutfen bir sayi giriniz: "))
+# r=int(input("Lutfen bir sayi giriniz: "))
+# def Faktoriyel(x):
+#   carpim=1
+#   for i in range(1,x+1):
+#     carpim=carpim*i
+#   return carpim
+# def Permutasyon(a,b):
+#   return Faktoriyel(a)//Faktoriyel(a-b)
+# def Kombinasyon(a,b):
+#   return Permutasyon(a,b)//Faktoriyel(b)
+# print("K(",n,",",r,")= ",Kombinasyon(n,r))
+
+# permutasyon --> n! / (n-r)! idi 
+# disardan alinan n ve r sayisinin P(n,r) cevabını bulunuz
+# n=int(input("Lutfen bir sayi giriniz: "))
+# r=int(input("Lutfen bir sayi giriniz: "))
+# def Fakto(x):
+#   carpim=1
+#   for i in range(1,x+1):
+#     carpim=carpim*i
+#   return carpim
+# def Permutasyon(a,b):
+#   return Fakto(a)//Fakto(a-b)
+# print("P(",n,",",r,")= ",Permutasyon(n,r))  
+
+'''
+En büyük ortak Bolen
+Dışardan iki sayı alalım, bu iki sayını en küçük ortak böleni bulalım(FONKSİYON İLE)
+sayi1    sayi2    EBOB
+  
+  5        8       1
+  
+  12       18      6
+  
+  15       45      15
+
+'''  
+# x=int(input("Lutfen bir sayi giriniz: "))
+# y=int(input("Lutfen bir sayi giriniz: "))
+# def EBOB(x,y):
+#   minm=x
+#   if y<minm:
+#     minm=y
+#   for i in range(minm,0,-1):
+#     if x%i==0 and y%i==0:
+#       return i
+
+# print(x,"ve",y,"degerleri için EBOB: ",EBOB(x,y))
+
+'''
+En küçük ortak Kat
+Dışardan iki sayı alalım, bu iki sayını en küçük ortak katını bulan fonksiyon yazalim.
+sayi1    sayi2    EKOK
+  
+  5        8       40
+  
+  12       18      36
+  
+  15       45      45
+ 
+ 
+'''
+# x=int(input("Lutfen bir sayi giriniz: "))
+# y=int(input("Lutfen bir sayi giriniz: "))   
+# def EKOK(x,y):
+#   maks=x
+#   if y>maks:
+#     maks=y
+#   for i in range(maks,(x*y)+1):
+#     if i%x==0 and i%y==0:
+#       return i 
+
+# print(x,"ve",y,"nin EKOK'u: ",EKOK(x,y))  
+
+# carpim_bulma()
+
+# def carpim_bulma2():
+#   import random
+#   sayi1=random.randint(1,9)
+#   sayi2=random.randint(1,9)
+#   print(sayi1,"*",sayi2,"degeri nedir?")
+#   carpim=sayi1*sayi2
+#   while True:
+#     cevap=int(input("Lutfen cevabı giriniz: "))
+#     if cevap==carpim:
+#       print(cevap,"Doğru cevap.")
+#       break
+#     else:
+#       print("Yanlis, lutfen tekrar deneyiniz.")
+# carpim_bulma2()
+
+# '''
+# fakroriyel hesaplayan fonksiyon
+# '''
+# def fakto_hesap(n):
+#   carpim=1
+#   for i in range(1,n+1):
+#     carpim=carpim*i
+#   return carpim
+# print(fakto_hesap(5)) 
+
+'''
+Rastsal olarak 1-9 arasında 2 sayı üreten
+iki sayının çarpımını kullanıcıya soran
+Doğru cevap girilene kadar
+Girdi almaya devam eden python 
+programını yazın (fonksiyon ile)
+'''
+# def carpim_bulma():
+#   import random
+#   sayi1=random.randint(1,9)
+#   sayi2=random.randint(1,9)
+#   print(sayi1,sayi2)
+#   carpim=sayi1*sayi2
+#   while True:
+#     cevap=int(input("Lutfen sayilarin carpimini giriniz: "))
+#     if carpim==cevap:
+#       print("Tebrikler",cevap,"dogru cevap.")
+#       break
+#     else:
+#       print("Tekrar deneyiniz.")
+
+#Asal kontrolu (Dışarıdan aldığımız n sayısı için)
+# n=int(input("Lutfen bir sayi giriniz: "))
+# if n<2:
+#   print(n,"Sayisi asal degildir.")
+# elif n==2:
+#   print(n,"Sayisi asaldir.")
+# else:
+#   for i in range(2,n):
+#     if n%i==0:
+#       print("Girdiginiz", n ,"asaldir degildir.")
+#       break
+#   else:
+#     print(n,"Sayisi asaldir.")
+
+#Asal kontrolu 1-1000 arasi
+# for n in range(2,1000):
+#   if n==2:
+#     print(n,"Asaldir.")
+#   else:
+#     for i in range(2,n):
+#       if n%i==0:
+#         print(n,"Asal degildir.")
+#         break
+#     else:
+#       print(n,"Asaldir.")
+
+# x=int(input("Lutfen bir sayi giriniz: "))
+# i=1
+# carpim=1
+# while i<=x:
+#     carpim=carpim*i
+#     i=i+1
+# print("Girilen sayiya kadar olan carpim islemi: ",carpim)                     
+
+#Disardan alinan sayiya kadar olan tek sayi carpma islemi
+# x=int(input("Lutfen bir sayi giriniz: "))
+# carpim=1
+# for i in range(1,x+1):
+#     if i%2==1:
+#         carpim=carpim*i
+# print(x,"!:",carpim) 
+       
+#Disardan alinan sayiya kadar olan cift sayi carpma islemi
+# x=int(input("Lutfen bir sayi giriniz: "))
+# i=1
+# carpim=1
+# while i<=x:
+#     if i%2==0:
+#         carpim=carpim*i
+#     i=i+1    
+# print(x,"!:",carpim) 
+
+#Disardan 5 basamakli sayi okuyun (kontrol edilmeli)
+#sayinin basamak degerleri toplamina tam bölünme/bölünememe
+#durumunu ekrana yazın PALINDROME EKLENDI                                           
+
+# x=int(input("Lutfen 5 basamakli bir sayi giriniz: "))
+# if x>=10000 and x<=99999:
+#     bb=x%10
+#     ob=(x//10)%10
+#     yb=(x/100)%10
+#     binb=(x//1000)%10
+#     obin=x//10000
+#     toplam=bb+ob+yb+binb+obin
+#     if x%toplam==0:
+#         print("Sayi basamak degerleri toplamina tam bolunur.")
+#     else:
+#         print("Sayi basamak degerleri toplamina tam bolunmez.")
+#     if bb==obin and ob==binb:
+#         print("Sayi palindromedir.")
+#     else:
+#         print("Sayi palindrome degildir.")
+# else:
+#     print("Sayi 5 basamakli degil, tekrar deneyiniz ")
+
+# x=int(input("Lutfen bir kısa kenar giriniz: "))
+# y=int(input("Lutfen bir uzun kenar giriniz: "))
+# cevre=(x+y)*2
+# alan=x*y
+# print("Verilen degerlere gore cevre ", cevre, "alan ", alan)
+
+# x=int(input("Lutfen bir sayi giriniz: "))
+# if x>0:
+#     print("Girilen ",x,"degeri pozitiftir.")
+# elif x==0:
+#     print("Girilen ",x,"degeri notrdur.")    
+# else:
+#     print("Girilen ",x,"degeri negatiftir.")    
+
+#  x=int(input("Lutfen bir sayi giriniz: "))
+# y=int(input("Lutfen bir sayi giriniz: "))
+# z=int(input("Lutfen bir sayi giriniz: "))
+# maxm=x
+# minm=x
+# if y>maxm:
+#     maxm=y
+# if z>maxm:
+#     maxm=z
+# if y<minm:
+#     minm=y
+# if z<minm:
+#     minm=z
+# print("En kucuk deger: ",minm, "En buyuk deger: ",maxm) 
