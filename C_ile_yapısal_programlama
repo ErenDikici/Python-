@@ -1,0 +1,470 @@
+// Bir sayinin tek mi cift mi oldugunu bulun konsola yazan programi yaziniz.
+    /*
+    int sayi;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi % 2 == 0)
+    {
+        printf("Girilen %d sayisi cifttir.",sayi);
+    }
+    else
+    {
+        printf("Girilen %d sayisi tektir.",sayi);
+    }
+    */
+
+// Console'dan girilen bir sayinin 3'e veya 7'ye tam bolunup bolunemedigini hesaplayan bir C programi yazalim.
+    /*
+    int sayi;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi % 3 == 0 || sayi % 7 == 0)
+    {
+        printf("Girilen %d sayisi 3'e veya 7'ye tam bolunur.",sayi);
+    }
+    else
+    {
+        printf("Girilen %d sayisi 3'e veya 7'ye tam bolunmez.",sayi);
+    }
+    */
+
+// Console'dan girilen bir sayinin 5'in kati olup olmadigini bulan bir C programi yazalim.
+    /*
+    int sayi;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi % 10 == 0 || sayi % 10 == 5 || sayi == 5)
+    {
+        printf("Girilen %d sayisi 5'in tam katidir.",sayi);
+    }
+    else
+    {
+        printf("Girilen %d sayisi 5'in tam kati degildir.",sayi);
+    }
+    */
+
+// Klavyeden girilen 4 basamakli bir sayinin rakamlarini toplayip ekrana basan programi yazalim.
+    /*
+    int sayi,bb,ob,yb,binb,toplam;
+    printf("Lutfen 4 basamakli bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi>=1000 && sayi<=9999)
+    {
+        bb = sayi%10;
+        ob = (sayi/10)%10;
+        yb = (sayi/100)%10;
+        binb = sayi/1000;
+        toplam = bb+ob+yb+binb;
+        printf("Girilen %d sayisinin rakamlari toplami %d'dir.",sayi,toplam);
+    }
+    else
+    {
+        printf("Lutfen 4 basamakli bir sayi girip tekrar deneyiniz.");
+    }
+    */
+
+ /*
+    int s1,s2,s3,minimum,maximum;
+    printf("Lutfen uc tane sayi giriniz: ");
+    scanf("%d %d %d",&s1,&s2,&s3);
+    minimum = s1;
+    maximum = s1;
+    if (s2>maximum)
+    {
+        maximum=s2;
+    }
+    if (s3>maximum)
+    {
+        maximum=s3;
+    }
+    printf("Girilen sayilarin en buyugu: %d\n",maximum);
+    if (s2<minimum)
+    {
+        minimum=s2;
+    }
+    if (s3<minimum)
+    {
+        minimum=s3;
+    }
+    printf("Girilen sayilarin en kucugu: %d",minimum);
+    */
+
+/*
+    int sayi,b1,b2,b4,b5;
+    printf("Lutfen bes basamakli bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi>9999 && sayi<100000){
+        b1=sayi%10;
+        b2=(sayi/10)%10;
+        b4=(sayi/1000)%10;
+        b5=sayi/10000;
+        if (b1==b5 && b2==b4){
+            printf("\n%d palindromedir.");
+        }
+        else{
+            printf("\n%d palindrome degildir.");
+        }
+    }
+    else{
+        printf("\nGirdiginiz sayi bes basamakli degil.");
+    }
+    */
+
+/*
+    int secim;
+    printf("Lutfen haftanin gununu giriniz: ");
+    scanf("%d",&secim);
+    switch(secim)
+    {
+        case 1:
+            printf("\nPazartesi gunu");
+            break;
+        case 2:
+            printf("\nSali gunu");
+            break;
+        case 3:
+            printf("\nCarsamba gunu");
+            break;
+        case 4:
+            printf("\nPersembe gunu");
+            break;
+        case 5:
+            printf("\nCuma gunu");
+            break;
+        case 6:
+            printf("\nCumartesi gunu");
+            break;
+        case 7:
+            printf("\nPazar gunu");
+            break;
+        default:
+            printf("\n1 ile 7 arasinda sayi girmediniz.");
+    }
+    */
+
+/*
+    char secim;
+    int sayi1,sayi2,sonuc;
+    printf("Lutfen islemi(+,-,*,/) giriniz\n");
+    scanf("%c",&secim);
+    printf("Lutfen iki sayi giriniz: \n");
+    scanf("%d %d",&sayi1,&sayi2);
+    switch (secim)
+    {
+        case '+':
+            sonuc = sayi1 +sayi2;
+            printf("\n%d + %d => %d",sayi1,sayi2,sonuc);
+            break;
+        case '-':
+            sonuc = sayi1 - sayi2;
+            printf("\n%d - %d => %d",sayi1,sayi2,sonuc);
+            break;
+        case '*':
+            sonuc = sayi1 * sayi2;
+            printf("\n%d * %d => %d",sayi1,sayi2,sonuc);
+            break;
+        case '/':
+            if (sayi2!=0)
+            {
+                sonuc = sayi1 / sayi2;
+                printf("\n%d / %d => %d",sayi1,sayi2,sonuc);
+            }
+            else
+            {
+                printf("\n Sifira bolme yapilamaz, tanimsiz.");
+            }
+            break;
+        default:
+            printf("\nislem dogru degil.");
+    }
+    */
+
+/*
+    int sayac = 1;
+    while (sayac<=10)
+    {
+        printf("%d ",sayac);
+        sayac = sayac +1; // ya da sayac++;
+    }
+    */
+    /*
+    int sayac = 10;
+    while (sayac >= 1)
+    {
+        printf("%d\n",sayac);
+        sayac--;
+    }
+    */
+    /*
+    int sayac = 1;
+    printf("Sayi1 Sayi2 Sayi3\n");
+    printf("----- ----- -----\n");
+    while (sayac<=10)
+    {
+        printf("%3d  %3d   %3d \n",sayac,sayac*sayac,sayac*sayac*sayac);
+        sayac++;
+    }
+    */
+    /*
+    int derece =5;
+    float fahren;
+    printf("Derece Fahrenheit\n");
+    printf("------ ----------\n");
+    while (derece<=50)
+    {
+        fahren = (9.0/5.0) * derece +32.0;
+        printf("%5d %12.2f\n",derece,fahren);
+        derece+=5;
+    }
+    */
+    /*
+    int galon = 5;
+    float litre;
+    printf("Galon Litre\n");
+    printf("----- -----\n");
+    while (galon<=50)
+    {
+        litre = 3.875 * galon;
+        printf("%d   %.2f\n",galon,litre);
+        galon+=5;
+    }
+    */
+    /*
+    int sayi = 0, toplam = 0;
+    printf("Lutfen sayi girin, cikis icin 100 den fazla girin\n");
+    while (sayi<=100)
+    {
+        toplam=toplam+sayi;
+        scanf("%d",&sayi);
+    }
+    printf("Girilen sayilarin toplami %d'dir.",toplam);
+    */
+    /*
+    int sayi,toplam = 0;
+    printf("Lutfen sayi girin, cikis icin 100 den fazla girin\n");
+    while(true)
+    {
+         scanf("%d",&sayi);
+         if (sayi>100)
+         {
+             break;
+         }
+         toplam = toplam + sayi;
+    }
+    printf("Girilen sayilarin toplami: %d\n",toplam);
+    */
+    /*
+    int sayi, sayac = 0, toplam =0;
+    float ort;
+    printf("Cikis icin 100 den buyuk girin\n");
+    while(1)
+    {
+        scanf("%d",&sayi);
+        if (sayi>100)
+        {
+            break;
+        }
+        sayac++;
+        toplam += sayi;
+    }
+    if (sayac !=0)
+    {
+        ort = (float)(toplam)/(float)(sayac);
+        printf("\nGirilen sayilarin ortalamasi :%.3f",ort);
+    }
+    else
+    {
+        printf("\n0-100 arasi sayi girilmedi.");
+    }
+    */
+    /*
+    int sayi;
+    srand(time(NULL));
+    sayi = rand()%100;
+    printf("%d",sayi);
+    */
+    /*
+    int cevap, sayi1, sayi2, sayac = 0;
+    srand(time(NULL));
+    sayi1 = rand()%10;
+    sayi2 = rand()%10;
+    while(1)
+    {
+        printf("%d x %d = ?\n",sayi1,sayi2);
+        scanf("%d",&cevap);
+        if(sayi1*sayi2 == cevap)
+        {
+            printf("\nTebrikler");
+            break;
+        }
+        else
+        {
+            sayac++;
+        }
+    }
+    if (sayac == 0)
+    {
+        printf("\nilk hakkinizda buldunuz");
+    }
+    else
+    {
+        printf("\n %d seferde buldunuz",sayac+1);
+    }
+    */
+    /*
+    for (int i=1; i<=10; i++)
+    {
+        printf("%d ",i);
+    }
+    */
+    /*
+    for (int i=1;i<=10;i++)
+    {
+        printf("%d ",i);
+    }
+    int i=1;
+    while(i<=10)
+    {
+        printf("\n%d ",i);
+        i++;
+    }
+    */
+
+    //Dışardan okuduğun say ile 4 arasındaki çift sayıların toplamını ekrana yazan program
+    /*
+    int sayi,toplam=0;
+    printf("Lutfen 4ten buyuk bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    for (int i=4;i<=sayi;i=i+2)
+    {
+        toplam=(toplam+i);
+    }
+    printf("Toplam %d",toplam-4);
+    int i, sayi, toplam=0;
+    printf("Lutfen dortten buyuk bir sayi girin\n");
+    scanf("%d",&sayi);
+    for( i=4 ; i <= sayi ; i++ )
+    {
+        if(i % 2 == 0)
+        {
+            toplam = toplam + i;
+        }
+
+    }
+    printf("Sonuc: %d\n",toplam);
+    return 0;
+    */
+
+    // while ile faktoriyel hesabı
+    /*
+    int sayi,i=1,carpim=1;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    while(i<=sayi)
+    {
+        carpim*=i;
+        i++;
+    }
+    printf("Girilen %d sayisinin faktoriyeli %d'dir.",sayi,carpim);
+    */
+
+    //for ile faktoriyel hesabi
+    /*
+    int sayi,carpim=1;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    for (int i=1;i<=sayi;i++)
+    {
+        carpim*=i;
+    }
+    printf("Girilen %d sayisinin faktoriyeli %d'dir.",sayi,carpim);
+    */
+    /*
+    int taban,us,carpim=1;
+    printf("Lutfen taban icin pozitif bir sayi giriniz: ");
+    scanf("%d",&taban);
+    printf("Lutfen us icin pozitif bir sayi giriniz: ");
+    scanf("%d",&us);
+    for (int i=1; i<=us; i++)
+    {
+        carpim=carpim*taban;
+    }
+    printf("%d ussu %d = %d\n",taban,us,carpim);
+    */
+
+
+    /*
+    int sayi,i;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi<2)
+    {
+        printf("%d asal degil\n");
+    }
+    else if (sayi == 2)
+    {
+        printf("%d asal.\n");
+    }
+    else
+    {
+        for(i=2;i<sayi;i++)
+        {
+            if (sayi%i==0)
+            {
+                break;
+            }
+        }
+        if (i==sayi)
+        {
+            printf("%d asal\n",sayi);
+        }
+        else
+        {
+            printf("%d asal degildir.",sayi);
+        }
+    }
+    */
+
+
+    /*
+    int sayi,i=2;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if(sayi<0)
+    {
+    printf("Lutfen pozitif bir deger giriniz. ");
+    return 0;
+    }
+    while(i<(sayi/2))
+    {
+        if (sayi%i ==0)
+        {
+            printf("Girilen %d sayisi asal degildir.",sayi);
+            return 0;
+        }
+        i++;
+    }
+    printf("Girilen %d sayisi asaldir.",sayi);
+    return 0;
+    */
+
+
+    /*
+    int sayi,i;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+    if (sayi<0)
+    {
+        printf("Lutfen pozitif bir deger giriniz");
+        return 0;
+    }
+    for (i=2;i<(sayi/2);i++)
+    {
+        if (sayi%i == 0)
+        {
+            printf("Girilen %d sayisi asal degildir.",sayi);
+            return 0;
+        }
+    }
+    printf("Girilen %d sayisi asaldir.",sayi);
+    */
